@@ -1,0 +1,378 @@
+* {
+	box-sizing: border-box;
+}
+
+html,body
+{
+    margin:0;
+    padding: 0;
+    width: 100%;
+  
+}
+
+h1 {
+	text-align: center;
+}
+
+#app {
+	
+	width: 100%;
+}
+
+/* START NAVBAR */
+.navbar
+{
+    background-color: black;
+    justify-content: flex-end;   
+}
+
+/* Dropdown Button */
+
+
+
+.dropbtn {
+    
+ background-color: transparent;
+  border: none;
+  justify-content: flex-end;
+  width:100%;
+
+  
+}
+.linie-buton {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  justify-content: flex-end;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 160px;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 100;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd; z-index: 100;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;z-index: 100;}
+
+
+
+/* END NAVBAR */
+
+
+/*INCEPUT COVER*/
+
+.cover
+{
+
+    width: 100%;
+    height: 20em;
+    display: table; 
+
+    background-color: teal;
+    
+    
+}
+
+.cover p{
+    flex-direction: column;
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell; 
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/*SFARSIT COVER*/
+
+.about-container{
+    
+    display: table;
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    
+ 
+    margin-bottom: 8em;
+
+}
+.text{
+
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    padding-right: 100px;
+    padding-left: 100px;
+    
+}
+.text p{
+    text-align: justify;
+    
+    
+}
+
+.imag{
+   
+    width: 35%;
+    text-align: center;
+
+}
+
+
+
+
+.submeniu{
+    overflow:hidden;
+    text-align: center;
+}
+
+.right{
+    width: 50%;
+    float:right;
+}
+.left{
+    width:50%;
+    float:left;
+}
+
+
+
+/*INCEPUT TIMELINE*/
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+.timeline-container::after {
+    background-color: #e17b77;
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.timeline-item-content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 410px;
+    max-width: 70%;
+    text-align: right;
+}
+
+.timeline-item-content::after {
+    content: ' ';
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item-content .tag {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    top: 5px;
+    left: 5px;
+    letter-spacing: 1px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .tag {
+    left: auto;
+    right: 5px;
+}
+
+.timeline-item-content time {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timeline-item-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+    
+}
+
+.timeline-item-content a {
+	color: #333;
+	text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.timeline-item-content a::after {
+    content: ' ►';
+    font-size: 12px;
+}
+
+.timeline-item-content .circle {
+    background-color: #fff;
+    border: 3px solid #e17b77;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+    right: auto;
+    left: -40px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .timeline-item-content {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .timeline-item-content,
+    .timeline-item:nth-child(odd) .timeline-item-content {
+        padding: 15px 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .timeline-item-content .tag {
+        width: calc(100% - 10px);
+        text-align: center;
+    }
+
+    .timeline-item-content time {
+        margin-top: 20px;
+    }
+
+    .timeline-item-content a {
+        text-decoration: underline;
+    }
+
+    .timeline-item-content a::after {
+        display: none;
+    }
+    .imag{
+        display: none;
+    }
+    .text{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+
+    .left{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .right{
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+/*SFARSIT TIMELINE*/
+
+
+.footer{
+    margin-top: 20em;
+    padding: 3em;
+    background-color: black;
+    text-align: center;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .icon{
+      color: black;
+        text-align: center;
+        justify-content: space-around;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 20px;
+        
+  }
+
+  .footer p{
+      color: white;
+      font-size: 16px;
+  }
+
