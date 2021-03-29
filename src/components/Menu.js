@@ -36,10 +36,7 @@ class Menu extends React.Component {
          
           
             <a href="#Skills">Skills</a>
-        
-          
-            
-       
+                     
         </div>
       )
     }

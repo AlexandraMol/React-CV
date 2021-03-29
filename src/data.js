@@ -6,7 +6,8 @@ const timelineData = [
 			tag: 'WORK',
 			color: '#FFD300'
 		},
-        description:'ala bala'
+        description:'I do primary accounting such keeping customers records and updating financial data. Also, I handle paperwork and keep administrative records.' 
+
         
     },
     {
@@ -20,7 +21,7 @@ const timelineData = [
             url: 'https://sisc.ro/',
             text: 'See site'
         },
-        description:'ala bala'
+        description:'Being a member of the Front End department gave me the opportunity to improve my knowledge in Web Technologies such as HTML, CSS and Javascript. I also took part in projects such as Tap That Job and Dare to Speak where I was responsabile of creating a website in collaboration with my team.'
     },
     {
         text: 'Fundraising Manager at Gutenberg Bukarest',
@@ -33,7 +34,7 @@ const timelineData = [
             url: 'https://gutenberg.ro/ro/bucuresti/',
             text: 'See site'
         },
-        description:'ala bala'
+        description:'I was responsible for implementing a newsletter and conducting research on fundraising opportunities. '
     },
     {
         text:
@@ -44,7 +45,7 @@ const timelineData = [
 			color: '#018f69'
 		},
 
-        description:'ala bala'
+        description:'I had the opportunity to be in the coordonation team of the ESIW Project where I was a trainer that taught primary-school children about the German culture and its language.'
     }
   
 ]

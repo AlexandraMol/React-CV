@@ -17,11 +17,11 @@ class CardFront extends React.Component {
               <h2>About me</h2>
 
             <p>I'm a driven and ambitious computer scientist undergraduate looking to improve my knowledge through hard work and dedication by putting my acquired knowledge and passion to practice in the software development industry.</p>  
-            <FaGithub className="icon"></FaGithub>
+            <a href="https://github.com/AlexandraMol" add target="_blank"><FaGithub className="icon"></FaGithub></a>
          <FaPhone className="icon">
          </FaPhone>
          <FaMailBulk className="icon"></FaMailBulk>
-         <FaLinkedin className="icon"></FaLinkedin>
+         <a href="https://www.linkedin.com/in/maria-alexandra-molnar-5682811a4/" add target="_blank"><FaLinkedin className="icon"></FaLinkedin></a>
             
             </div>
     </div>

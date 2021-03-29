@@ -24,6 +24,10 @@ h1 {
 {
     background-color: black;
     justify-content: flex-end;   
+    width: 100%;
+    z-index:99999;
+  
+    position: fixed;
 }
 
 /* Dropdown Button */
@@ -89,12 +93,13 @@ h1 {
 
 .cover
 {
-
+    
     width: 100%;
     height: 20em;
     display: table; 
 
-    background-color: teal;
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
     
     
 }
@@ -118,9 +123,7 @@ h1 {
     text-align: center;
     vertical-align: middle;
     font-size: 18px;
-    
- 
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 
 }
 .text{
@@ -150,12 +153,15 @@ h1 {
 
 .submeniu{
     overflow:hidden;
+    margin-left: 2em;
+    margin-right: 2em;
     text-align: center;
 }
 
 .right{
     width: 50%;
     float:right;
+    
 }
 .left{
     width:50%;
@@ -171,6 +177,7 @@ h1 {
     flex-direction: column;
     position: relative;
     margin: 40px 0;
+    text-align: justify;
 }
 
 .timeline-container::after {
@@ -189,6 +196,7 @@ h1 {
     position: relative;
     margin: 10px 0;
     width: 50%;
+    text-align: justify;
 }
 
 .timeline-item:nth-child(odd) {
@@ -199,7 +207,7 @@ h1 {
 }
 
 .timeline-item-content {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     background-color: #fff;
     display: flex;
@@ -208,7 +216,7 @@ h1 {
     padding: 15px;
     position: relative;
     width: 410px;
-    max-width: 70%;
+    max-width: 100%;
     text-align: right;
 }
 
@@ -262,6 +270,7 @@ h1 {
     font-size: 16px;
     line-height: 24px;
     margin: 15px 0;
+    text-align: justify;
     
 }
 
@@ -326,23 +335,18 @@ h1 {
     }
     .imag{
         display: none;
+        text-align: center;
+        border-radius: 50%;
     }
+
     .text{
         width: 100%;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-
-
-    .left{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .right{
-        flex-direction: column;
-        width: 100%;
+    .spatiu{
+        display: none;
     }
 
 }
@@ -351,7 +355,7 @@ h1 {
 
 
 .footer{
-    margin-top: 20em;
+    margin-top: 5em;
     padding: 3em;
     background-color: black;
     text-align: center;
@@ -376,3 +380,63 @@ h1 {
       font-size: 16px;
   }
 
+  .cartonasC
+  {
+    margin-top: 8em;
+    margin-bottom: 8em;
+      display: flex;
+      text-align: center;
+      width: 100%;
+     justify-content: center;
+     vertical-align: middle;
+
+  }
+
+  .spatiu
+  {
+      padding: 2em;
+  }
+
+  .cartonas{
+    
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    align-items: center;
+    
+    border: 3px solid #000;
+    border-radius: 2%;
+    width: 20%;
+    vertical-align: middle;
+    
+  }
+  
+  .cartonas:before{
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  
+  }
+  
+  .cartonas:after{
+    content: "";
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(-50%);
+      transition: transform calc(var(--d) * 2) var(--e);
+  
+  }
+  
+  .cartonas:hover{
+    transform: scale(1.1, 1.1);
+    transition: 1.2s
+    
+  }
+
+.sp
+{
+    padding: 2em;
+}
