@@ -6,10 +6,10 @@ class Menu extends React.Component {
         <div className="navbar">
           <div className="dropdown">
             
-          <button class="dropbtn">
-          <div class="linie-buton"></div>
-                <div class="linie-buton"></div>
-                <div class="linie-buton"></div>
+          <button className="dropbtn">
+          <div className="linie-buton"></div>
+                <div className="linie-buton"></div>
+                <div className="linie-buton"></div>
 
 
           <Submenu />

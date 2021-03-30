@@ -1,3 +1,4 @@
+/*START HTML,BODY*/
 * {
 	box-sizing: border-box;
 }
@@ -19,6 +20,8 @@ h1 {
 	width: 100%;
 }
 
+/*FINISH HTML,BODY*/
+
 /* START NAVBAR */
 .navbar
 {
@@ -31,8 +34,6 @@ h1 {
 }
 
 /* Dropdown Button */
-
-
 
 .dropbtn {
     
@@ -50,7 +51,6 @@ h1 {
   margin: 6px 0;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -58,7 +58,7 @@ h1 {
   
 }
 
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -69,7 +69,7 @@ h1 {
   z-index: 100;
 }
 
-/* Links inside the dropdown */
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -78,18 +78,18 @@ h1 {
   z-index: 100;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {background-color: #ddd; z-index: 100;}
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {display: block;z-index: 100;}
 
-
+/*END Dropdown Button*/
 
 /* END NAVBAR */
 
 
-/*INCEPUT COVER*/
+/*START COVER*/
 
 .cover
 {
@@ -114,7 +114,9 @@ h1 {
     
 }
 
-/*SFARSIT COVER*/
+/*END COVER*/
+
+/*START ABOUT-ME*/
 
 .about-container{
     
@@ -148,29 +150,10 @@ h1 {
 
 }
 
+/*END ABOUT-ME*/
 
 
-
-.submeniu{
-    overflow:hidden;
-    margin-left: 2em;
-    margin-right: 2em;
-    text-align: center;
-}
-
-.right{
-    width: 50%;
-    float:right;
-    
-}
-.left{
-    width:50%;
-    float:left;
-}
-
-
-
-/*INCEPUT TIMELINE*/
+/*START TIMELINE*/
 
 .timeline-container {
     display: flex;
@@ -383,8 +366,9 @@ h1 {
 
 }
 
-/*SFARSIT TIMELINE*/
+/*END TIMELINE*/
 
+/*START FOOTER*/
 
 .footer{
     margin-top: 5em;
@@ -412,15 +396,14 @@ h1 {
       font-size: 16px;
   }
 
-  
+  /*END FOOTER*/
 
 * {
     box-sizing: border-box;
   }
   
   
-  
-  
+  /*START CARDS*/
   
   .page-content {
     display: grid;
@@ -438,12 +421,12 @@ h1 {
     }
   @media (min-width: 600px) {
     .page-content {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   @media (min-width: 800px) {
     .page-content {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   
@@ -523,16 +506,26 @@ h1 {
     .card:nth-child(1):before {
       background-image: url(https://image.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg);
       background-size: contain;
+      background-repeat: no-repeat;
       opacity: 0.6;
     }
     .card:nth-child(2):before {
       background-image: url(https://image.freepik.com/free-vector/university-student-cap-mortar-board-diploma_3446-334.jpg);
       background-size: contain;
+      background-repeat: no-repeat;
       opacity: 0.6;
     }
     .card:nth-child(3):before {
       background-image: url(https://image.freepik.com/free-vector/language-learning-camp-abstract-concept-illustration_335657-3920.jpg);
       background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.6;
+    }
+
+    .card:nth-child(4):before {
+      background-image: url(https://image.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg);
+      background-size: contain;
+      
       background-repeat: no-repeat;
       opacity: 0.6;
     }
@@ -579,22 +572,8 @@ h1 {
       transition-duration: 0s;
     }
 
-    .card:nth-child(1):before {
-      background-image: url(https://image.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg);
-      background-size: contain;
-      opacity: 0.6;
-    }
-    .card:nth-child(2):before {
-      background-image: url(https://image.freepik.com/free-vector/university-student-cap-mortar-board-diploma_3446-334.jpg);
-      background-size: contain;
-      opacity: 0.6;
-    }
-    .card:nth-child(3):before {
-      background-image: url(https://image.freepik.com/free-vector/language-learning-camp-abstract-concept-illustration_335657-3920.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.6;
-    }
-    
+
     
   }
+
+  /*END CARDS*/

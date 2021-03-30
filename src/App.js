@@ -7,7 +7,7 @@ import Cover from './components/Cover';
 import CardFront from './components/AboutMe';
 import { HeartIcon } from 'evergreen-ui';
 import Skills from './components/Skills';
-
+import GitHubUser from './components/GithubRepo';
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
 
       <Timeline/>
 
-            
+       
       <div id="Skills"></div>
        <Skills />
         
