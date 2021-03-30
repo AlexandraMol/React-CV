@@ -5,36 +5,38 @@ class Skills extends React.Component{
     render() {
         return (
                 
-                <div className="cartonasC">
-            
+            <main className="page-content">
+            <div className="card">
+              <div className="content">
+                <h2 className="title">Digital skills</h2>
+                <p className="copy">C++: Created a database with OOP concepts</p>
+                <p className="copy">SQL: Created a database to track the situation in a cafe</p>
+                <p className="copy">HTML and CSS, Javascript</p>                  
+                <p className="copy">Python</p>
+                <p className="copy">Adobe Illustrator</p>
+               
+              </div>
+            </div>
+            <div className="card">
+              <div className="content">
+                <h2 className="title">Digital certifications</h2>
+                <p className="copy">Database Design and Database Programming with SQL</p>
+                <p className="copy">PCAP: Programming Essentials in Python</p>
+                <p className="copy">IC3 Digital Literacy certification</p>
+                <p className="copy">Certificate of professional competence in informatics</p>
                 
-                <div className="cartonas">
-                    <h2>Digital skills</h2>
-                    <p>C++: Created a database with OOP concepts</p>
-                    <p>SQL: Created a database to track the situation in a cafe</p>
-                    <p>HTML and CSS, Javascript</p>                  
-                    <p>Python</p>
-                    <p>Adobe Illustrator</p>
-                </div>
-                <div className="spatiu"></div>
-                <div className="cartonas" >
-                    <h2>Digital certifications</h2>
-                    <p>Database Design and Database Programming with SQL</p>
-                    <p>PCAP: Programming Essentials in Python</p>
-                    <p>IC3 Digital Literacy certification</p>
-                    <p>Certificate of professional competence in informatics</p>
-                </div>
-                <div className="spatiu"></div>
-                <div className="cartonas">
-                    <h2>Language skills</h2>
-                    <p>English C1 (CAE Certificate)</p>
-                    <p>German B1 (Goethe-Zertifikat)</p>
-                </div>
-
-                    
-
-                </div>
-                
+              </div>
+            </div>
+            <div className="card">
+              <div className="content">
+                <h2 className="title">Language skills</h2>
+                <p className="copy">English C1 (CAE Certificate)</p>
+                <p className="copy">German B1 (Goethe-Zertifikat)</p>
+               
+              </div>
+            </div>
+        
+          </main>
 
                 
         )

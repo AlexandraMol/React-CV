@@ -5,7 +5,7 @@ import Timeline from './components/Timeline';
 import Menu from './components/Menu';
 import Cover from './components/Cover';
 import CardFront from './components/AboutMe';
-import { DotIcon, HeartIcon } from 'evergreen-ui';
+import { HeartIcon } from 'evergreen-ui';
 import Skills from './components/Skills';
 
 
@@ -16,7 +16,7 @@ function App() {
     <div className="myApp">
     
     <Menu/>
-    <div class="sp"></div>
+    
     <Cover/>
 
         
