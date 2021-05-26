@@ -14,7 +14,7 @@ class Skills extends React.Component{
                 <p className="copy">HTML and CSS, Javascript</p>                  
                 <p className="copy">Python</p>
                 <p className="copy">Adobe Illustrator</p> 
-                {/* de trimis ca un array cu string si trimit ca prop in componenta */}
+                
                
               </div>
             </div>
